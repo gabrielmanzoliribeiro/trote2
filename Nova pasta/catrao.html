@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- indica que é um documento html-->
+<html lang="pt-br"> <!-- elemento raiz -->
+    <head>
+        <!-- sistema de codificação português -->
+        <meta charset="utf-8"> 
+        <!-- faz ligação com o CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title> Meu cartão de visita </title>
+    </head>
+    <body>
+        <!-- usar class tem a vantagem de reaproveitar estilo css -->
+        <div class="cartao"> <!-- delimitação lógica de uma área -->
+            <img src="C:\prog. gabriel\Nova pasta\22-MANZOLI-400x400.png" alt=""> <!-- imagem -->
+            <h1> Olá a todos </h1> <!-- Título -->
+            <p> Bem-Vindo ao meu cartão de visita </p> <!-- parágrafo -->
+            <P>Nome: Gabriel Antonio Manzoli Ribeiro</P>
+            <p>cursando bacharelado em sistemas de informação </p>
+            <p> 1° semestre</p>
+            <button>
+                <!-- link dentro do botão--> 
+                <a href="https://github.com/gabrielmanzoliribeiro"target="_blank" rel="noopener noreferrer"> Acesse meu github </a>
+            </button>
+        </div>
+        <style>
+            body {
+    /* cor de fundo */
+    background-color: #5ba063;
+    /* definir o FlexBox como layou da página */
+    display: flex;
+    /* centralizar na horizontal */
+    justify-content: center;
+    /* centralizar na vertical */
+    align-items: center;
+    /* define altura da página */
+    height: 100vh;
+}
+/* o ponto referencia um class */
+.cartao {
+    /* cor de fundo */
+    background-color: #ffffff;
+    /* espaçamento interno */
+    padding: 20px;
+    /* cantos arredondados */
+    border-radius: 10px;
+    /* alinhamento do texto */
+    text-align: center;
+}
+button {
+    background-color: #5ba063;
+    /* cor do texto */
+    color: white;
+    border-radius: 10px;
+    /* 10px é em cima e em baixo e 20px é na esquerda e direita */
+    padding: 10px 20px;
+    /* sem borda */
+    border: none;
+}
+button:hover {
+    /* cor de fundo quando o mouse passar por cima */
+    background-color: #39673d;
+    /* cursor do mouse */
+    cursor: pointer;
+}
+img{
+    width: 200px;
+    border-radius: 30%;
+}
+        </style>
+        
+    </body>
+</html>
